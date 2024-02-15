@@ -1,2 +1,2 @@
 # shikshasaathi.org
-Shiksharthi SMS Website team
+shikshasaathi  SMS Website team
