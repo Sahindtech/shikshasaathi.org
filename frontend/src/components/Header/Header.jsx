@@ -9,12 +9,12 @@ const navLinks = [
   },
   {
     display: "About",
-    url: "#",
+    url: "/aboutus",
   },
 
   {
     display: "Courses",
-    url: "#",
+    url: "/courses",
   },
   {
     display: "Student Corner",
