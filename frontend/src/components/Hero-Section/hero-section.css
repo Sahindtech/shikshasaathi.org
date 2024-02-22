@@ -21,3 +21,19 @@
   border-radius: 50px;
   margin-top: 20px;
 }
+/* hero-section.css */
+
+.hero__title span:last-child {
+  display: inline-block;
+  opacity: 0;
+  animation: typing 1s forwards;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
