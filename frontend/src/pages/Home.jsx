@@ -1,5 +1,6 @@
 import React, { Fragment } from "react";
 import "../components/Contact/contact.css";
+import "../components/About/about.css";
 import { Card, Button, Col, Container, Row } from "react-bootstrap";
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
