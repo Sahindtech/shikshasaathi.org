@@ -14,11 +14,13 @@ const images = [
 function Gallery() {
   return (
     <>
+      <Header />
       <div className="gallery ">
         {images.map((image, index) => (
           <img src={Img} alt="" className=" gallery__item " />
         ))}
       </div>
+      <Footer />
     </>
   );
 }
