@@ -60,9 +60,10 @@ form {
     padding: 10px 20px;
     border: none;
     border-radius: 20px;
-    width: 45%;
+    width: 55%;
     cursor: pointer;
     font-size: 16px;
+    margin-left: 32px;
   }
   
   .btngrp:hover {
