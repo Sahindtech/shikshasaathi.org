@@ -22,7 +22,7 @@ const navLinks = [
   },
   {
     display: "Certificate View",
-    url: "#",
+    url: "/certificate",
   },
   {
     display: "Gallery",

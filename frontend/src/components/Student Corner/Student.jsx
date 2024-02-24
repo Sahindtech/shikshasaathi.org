@@ -16,7 +16,7 @@ const StudentCorner = () => {
             </h1>
           </Col>
         </Row>
-        <h1>Student's Corner</h1>
+
         <form id="contact_form" name="contact_form" method="post">
           <h2>Check Your Record</h2>
           <div className="mb-3 row">

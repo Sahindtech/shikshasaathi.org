@@ -5,6 +5,7 @@ import Gallery from "../components/Gallery/Gallery";
 import Courses from "../components/Courses/Courses";
 import About from "../components/About/About";
 import Student from "../components/Student Corner/Student";
+import Certificate from "../components/Certificate/Certificate";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
   {
     path: "/gallery",
     element: <Gallery />,
+  },
+  {
+    path: "/certificate",
+    element: <Certificate />,
   },
   {
     path: "/contact",

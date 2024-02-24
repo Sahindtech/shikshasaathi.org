@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState, useEffect } from "react";
 import "../components/Contact/contact.css";
 import "../components/About/about.css";
 import { Card, Button, Col, Container, Row } from "react-bootstrap";
@@ -19,6 +19,18 @@ const images = [
   { src: { Img }, alt: "Image 5" },
 ];
 const Home = () => {
+  const [slideIndex, setSlideIndex] = useState(0);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setSlideIndex((prevIndex) =>
+        prevIndex === images.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 3000); // Adjust the interval time (in milliseconds) as needed
+
+    return () => clearInterval(intervalId); // Cleanup the interval on component unmount
+  }, []); // Empty dependency array to run the effect only once on mount
+
   return (
     <Fragment>
       <Header />
@@ -251,7 +263,14 @@ const Home = () => {
       <h1>Gallery</h1>
       <div className="gallery ">
         {images.map((image, index) => (
-          <img src={Img} alt="" className=" gallery__item " />
+          <img
+            src={Img}
+            alt={image.alt}
+            className={`gallery__item ${
+              index === slideIndex ? "" : "slide-left"
+            }`}
+            key={index}
+          />
         ))}
       </div>
       <Footer />
