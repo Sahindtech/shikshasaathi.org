@@ -17,7 +17,7 @@ const StudentCorner = () => {
         <form id="contact_form" name="contact_form" method="post">
         <h1>Student's Corner</h1>
         <div className="mb-3 row">
-          <div className="col-sm-6">
+          <div className="col-sm-8">
             <label>User name</label>
             <input
               type="text"
@@ -31,7 +31,7 @@ const StudentCorner = () => {
           </div>
           </div>
           <div className="mb-3 row">
-          <div className="col-sm-6">
+          <div className="col-sm-8">
             <label htmlFor="email_addr">Email address</label>
             <input
               type="email"
