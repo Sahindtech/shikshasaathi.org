@@ -14,8 +14,10 @@ const StudentCorner = () => {
                 <h1 style={{color: 'white'}} className='headerImg'>Student's Corner</h1>
             </Col>
         </Row>
-        <form id="contact_form" name="contact_form" method="post">
         <h1>Student's Corner</h1>
+        <form id="contact_form" name="contact_form" method="post">
+        
+        <h2>Check Your Record</h2>
         <div className="mb-3 row">
           <div className="col-sm-8">
             <label>User name</label>
@@ -44,8 +46,8 @@ const StudentCorner = () => {
             />
           </div>
           </div>
-          <button type="submit" className='btn btn-primary btngrp'>
-          Submit
+          <button type="submit" className='btn btn btn-success btngrp'>
+          Check Record
         </button>
           </form>
         </Container>
