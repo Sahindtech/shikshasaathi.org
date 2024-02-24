@@ -1,4 +1,13 @@
-import React, { Fragment, useState, useEffect } from "react";
+import React, { Fragment } from "react";
+
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+// import required modules
+import { Pagination } from "swiper/modules";
 import "../components/Contact/contact.css";
 import "../components/About/about.css";
 import { Card, Button, Col, Container, Row } from "react-bootstrap";
@@ -8,29 +17,11 @@ import "../components/Courses/courses.css";
 import "../components/Gallery/gallery.css";
 import Img from "../assests/images/seo.png";
 import aboutImg from "../assests/images/about-us.png";
-// import { Container, Row, Col } from "reactstrap";
+
 import heroImg from "../assests/images/hero-img1.png";
 import "../components/Hero-Section/hero-section.css";
-const images = [
-  { src: { Img }, alt: "Image 1" },
-  { src: { Img }, alt: "Image 2" },
-  { src: { Img }, alt: "Image 3" },
-  { src: { Img }, alt: "Image 4" },
-  { src: { Img }, alt: "Image 5" },
-];
+
 const Home = () => {
-  const [slideIndex, setSlideIndex] = useState(0);
-
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      setSlideIndex((prevIndex) =>
-        prevIndex === images.length - 1 ? 0 : prevIndex + 1
-      );
-    }, 3000); // Adjust the interval time (in milliseconds) as needed
-
-    return () => clearInterval(intervalId); // Cleanup the interval on component unmount
-  }, []); // Empty dependency array to run the effect only once on mount
-
   return (
     <Fragment>
       <Header />
@@ -260,19 +251,53 @@ const Home = () => {
       </Container>
 
       {/* Gallery starts */}
+
       <h1>Gallery</h1>
-      <div className="gallery ">
-        {images.map((image, index) => (
-          <img
-            src={Img}
-            alt={image.alt}
-            className={`gallery__item ${
-              index === slideIndex ? "" : "slide-left"
-            }`}
-            key={index}
-          />
-        ))}
-      </div>
+      <Swiper
+        slidesPerView={3}
+        spaceBetween={30}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[Pagination]}
+        className="mySwiper"
+      >
+        <SwiperSlide>
+          <img src={Img} className={`gallery__item`} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={Img} className={`gallery__item`} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          {" "}
+          <img src={Img} className={`gallery__item`} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          {" "}
+          <img src={Img} className={`gallery__item`} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          {" "}
+          <img src={Img} className={`gallery__item`} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          {" "}
+          <img src={Img} className={`gallery__item`} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          {" "}
+          <img src={Img} className={`gallery__item`} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          {" "}
+          <img src={Img} className={`gallery__item`} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          {" "}
+          <img src={Img} className={`gallery__item`} alt="" />
+        </SwiperSlide>
+      </Swiper>
+
       <Footer />
     </Fragment>
   );

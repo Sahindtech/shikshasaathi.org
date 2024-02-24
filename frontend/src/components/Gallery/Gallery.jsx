@@ -14,11 +14,6 @@ const images = [
   { src: { Img }, alt: "Image 8" },
   { src: { Img }, alt: "Image 9" },
   { src: { Img }, alt: "Image 10" },
-  { src: { Img }, alt: "Image 11" },
-  { src: { Img }, alt: "Image 12" },
-  { src: { Img }, alt: "Image 13" },
-  { src: { Img }, alt: "Image 14" },
-  { src: { Img }, alt: "Image 15" },
 ];
 
 function Gallery() {
@@ -27,7 +22,7 @@ function Gallery() {
       <Header />
       <h1>Gallery</h1>
       <div className="gallery ">
-        {images.map((image, index) => (
+        {images.map(() => (
           <img src={Img} alt="" className=" gallery__item " />
         ))}
       </div>
