@@ -18,7 +18,7 @@ const navLinks = [
   },
   {
     display: "Student Corner",
-    url: "#",
+    url: "/student",
   },
   {
     display: "Certificate View",

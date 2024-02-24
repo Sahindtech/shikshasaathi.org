@@ -248,6 +248,7 @@ const Home = () => {
       </Container>
 
       {/* Gallery starts */}
+      <h1>Gallery</h1>
       <div className="gallery ">
         {images.map((image, index) => (
           <img src={Img} alt="" className=" gallery__item " />

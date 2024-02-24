@@ -4,7 +4,7 @@ import Contact from "../components/Contact/Contact";
 import Gallery from "../components/Gallery/Gallery";
 import Courses from "../components/Courses/Courses";
 import About from "../components/About/About";
-
+import Student from "../components/Student Corner/Student";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -17,6 +17,10 @@ const router = createBrowserRouter([
   {
     path: "/course",
     element: <Courses />,
+  },
+  {
+    path: "/student",
+    element: <Student />,
   },
   {
     path: "/gallery",
