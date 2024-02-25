@@ -29,8 +29,8 @@ const Home = () => {
       <Header />
       {/* Hero section start */}
       <section>
-        <Container style={{ height: "30rem" }}>
-          <Row style={{ marginTop: "-4rem" }}>
+        <Container>
+          <Row>
             <Col lg="6" md="6">
               <div className="hero__content">
                 <h2 className="mb-4 hero__title">
@@ -68,7 +68,7 @@ const Home = () => {
             <h1>About Us</h1>
           </Col>
         </Row>
-        <Row style={{ marginTop: "-4rem" }}>
+        <Row>
           <Col sm={5}>
             <div className="left-content">
               <img src={aboutImg} alt="aboutImg" />
@@ -103,7 +103,7 @@ const Home = () => {
       {/* Courses start */}
 
       <Container fluid>
-        <Row style={{ marginTop: "-4rem" }}>
+        <Row>
           <Col className="col-12 text-center py-4">
             <h1>Our Courses</h1>
           </Col>
