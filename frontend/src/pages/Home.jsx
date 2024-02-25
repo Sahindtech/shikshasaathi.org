@@ -34,12 +34,18 @@ const Home = () => {
             <Col lg="6" md="6">
               <div className="hero__content">
                 <h2 className="mb-4 hero__title">
-                     Welcome to  <TypedText />
+                  Welcome to <TypedText />
                 </h2>
                 <p className="mb-5">
-                  Lorem ipsum dolor sit amet consectetur <br /> adipisicing
-                  elit. Aut saepe voluptatum earum delectus <br /> deserunt id
-                  iste, quas officiis et repellat!
+                  Our focus at Shiksha Saathi is to provide our students with
+                  best education and
+                  <br />
+                  to prepare them for rewarding careers in CAD/CAM, IT/CS &
+                  other competitive fields. <br />
+                  We accomplish this by creating a unique educational
+                  environment through <br />
+                  high-quality academic programs blend with practical approach,
+                  caring faculty and meticulous administration.
                 </p>
               </div>
               <div className="search">
