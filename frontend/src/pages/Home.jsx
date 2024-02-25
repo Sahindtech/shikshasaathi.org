@@ -3,6 +3,8 @@ import React, { Fragment } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
+import TypedText from "./TypedText";
+
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
@@ -32,7 +34,7 @@ const Home = () => {
             <Col lg="6" md="6">
               <div className="hero__content">
                 <h2 className="mb-4 hero__title">
-                  Anytime Anywhere <br /> Learn on your <br /> Suitable Schedule
+                     Welcome to  <TypedText />
                 </h2>
                 <p className="mb-5">
                   Lorem ipsum dolor sit amet consectetur <br /> adipisicing
