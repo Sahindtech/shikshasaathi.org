@@ -8,8 +8,10 @@ import TypedText from "./TypedText";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
+import "swiper/css/navigation";
+
 // import required modules
-import { Pagination } from "swiper/modules";
+import { Pagination, Navigation } from "swiper/modules";
 import "../components/Contact/contact.css";
 import "../components/About/about.css";
 import { Card, Button, Col, Container, Row } from "react-bootstrap";
@@ -116,7 +118,10 @@ const Home = () => {
         pagination={{
           clickable: true,
         }}
-        modules={[Pagination]}
+        navigation={{
+          autoplay:true,
+        }}
+        modules={[Pagination,Navigation]}
         className="mySwiper"
       >
             <Col lg="3" md="6">
