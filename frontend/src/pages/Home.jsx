@@ -108,152 +108,149 @@ const Home = () => {
             <h1>Our Courses</h1>
           </Col>
         </Row>
-        <Container>
+        <Container fluid>
           <Row>
+          <Swiper
+        slidesPerView={3}
+        spaceBetween={30}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[Pagination]}
+        className="mySwiper"
+      >
             <Col lg="3" md="6">
-              <Card style={{ width: "18rem" }}>
+          <SwiperSlide>
+              <Card style={{ width: "24rem"}} className={`gallery__item`}>
                 <Card.Body>
-                  <Card.Title>MCA</Card.Title>
+                  <Card.Title>Master of Computer Applications</Card.Title>
                   <Card.Text>
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
+                  MCA is a postgraduate degree program designed to provide 
+                  students with a deep understanding of computer applications and software development. 
                   </Card.Text>
                   <Button variant="primary">About more info.. </Button>
                 </Card.Body>
               </Card>
+            </SwiperSlide>
             </Col>
             <Col lg="3" md="6">
-              <Card style={{ width: "18rem" }}>
+            <SwiperSlide>
+              <Card style={{ width: "24rem"}} className={`gallery__item`}>
                 <Card.Body>
-                  <Card.Title>MCA</Card.Title>
+                  <Card.Title>Bachelor's of Computer Applications</Card.Title>
                   <Card.Text>
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
+                  BCA is an undergraduate degree program designed 
+                  to equip students with a strong foundation in computer applications and software development.
                   </Card.Text>
                   <Button variant="primary">About more info.. </Button>
                 </Card.Body>
               </Card>
+            </SwiperSlide>
             </Col>
             <Col lg="3" md="6">
-              <Card style={{ width: "18rem" }}>
+          <SwiperSlide>
+              <Card style={{ width: "24rem"}} className={`gallery__item`}>
                 <Card.Body>
-                  <Card.Title>MCA</Card.Title>
+                  <Card.Title>Master of Computer Applications</Card.Title>
                   <Card.Text>
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
+                  MCA is a postgraduate degree program designed to provide 
+                  students with a deep understanding of computer applications and software development. 
                   </Card.Text>
                   <Button variant="primary">About more info.. </Button>
                 </Card.Body>
               </Card>
+            </SwiperSlide>
             </Col>
             <Col lg="3" md="6">
-              <Card style={{ width: "18rem" }}>
+            <SwiperSlide>
+              <Card style={{ width: "24rem"}} className={`gallery__item`}>
                 <Card.Body>
-                  <Card.Title>MCA</Card.Title>
+                  <Card.Title>Bachelor's of Computer Applications</Card.Title>
                   <Card.Text>
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
+                  BCA is an undergraduate degree program designed 
+                  to equip students with a strong foundation in computer applications and software development.
                   </Card.Text>
                   <Button variant="primary">About more info.. </Button>
                 </Card.Body>
               </Card>
+            </SwiperSlide>
             </Col>
             <Col lg="3" md="6">
-              <Card style={{ width: "18rem" }}>
+            <SwiperSlide>
+              {" "}
+              <Card style={{ width: "24rem"}} className={`gallery__item`}>
                 <Card.Body>
-                  <Card.Title>MCA</Card.Title>
+                  <Card.Title>Bachelor of Technology </Card.Title>
                   <Card.Text>
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
+                  B.Tech is an undergraduate degree program focused on providing
+                   students with a strong foundation in engineering principles and technical skills. 
                   </Card.Text>
                   <Button variant="primary">About more info.. </Button>
                 </Card.Body>
               </Card>
+            </SwiperSlide>
             </Col>
             <Col lg="3" md="6">
-              <Card style={{ width: "18rem" }}>
+            <SwiperSlide>
+              {" "}
+              <Card style={{ width: "24rem" }} className={`gallery__item`}>
                 <Card.Body>
-                  <Card.Title>MCA</Card.Title>
+                  <Card.Title>Master of Science </Card.Title>
                   <Card.Text>
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
+                  B.Tech is an undergraduate degree program focused on providing
+                   students with a strong foundation in engineering principles and technical skills. 
                   </Card.Text>
                   <Button variant="primary">About more info.. </Button>
                 </Card.Body>
               </Card>
+            </SwiperSlide>
             </Col>
             <Col lg="3" md="6">
-              <Card style={{ width: "18rem" }}>
+            <SwiperSlide>
+              {" "}
+              <Card style={{ width: "24rem"}} className={`gallery__item`}>
                 <Card.Body>
-                  <Card.Title>MCA</Card.Title>
+                  <Card.Title>Bachelor's of Science </Card.Title>
                   <Card.Text>
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
+                  B.Tech is an undergraduate degree program focused on providing
+                   students with a strong foundation in engineering principles and technical skills. 
                   </Card.Text>
                   <Button variant="primary">About more info.. </Button>
                 </Card.Body>
               </Card>
+            </SwiperSlide>
             </Col>
             <Col lg="3" md="6">
-              <Card style={{ width: "18rem" }}>
+            <SwiperSlide>
+              {" "}
+              <Card style={{ width: "24rem"}} className={`gallery__item`}>
                 <Card.Body>
-                  <Card.Title>MCA</Card.Title>
+                  <Card.Title>B. Pharma</Card.Title>
                   <Card.Text>
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
+                  B.Tech is an undergraduate degree program focused on providing
+                   students with a strong foundation in engineering principles and technical skills. 
                   </Card.Text>
                   <Button variant="primary">About more info.. </Button>
                 </Card.Body>
               </Card>
+            </SwiperSlide>
             </Col>
             <Col lg="3" md="6">
-              <Card style={{ width: "18rem" }}>
+            <SwiperSlide>
+            {" "}
+              <Card style={{ width: "24rem"  }} className={`gallery__item`}>
                 <Card.Body>
-                  <Card.Title>MCA</Card.Title>
+                  <Card.Title>PGDCA </Card.Title>
                   <Card.Text>
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
+                  B.Tech is an undergraduate degree program focused on providing
+                   students with a strong foundation in engineering principles and technical skills. 
                   </Card.Text>
                   <Button variant="primary">About more info.. </Button>
                 </Card.Body>
               </Card>
-            </Col>
-            <Col lg="3" md="6">
-              <Card style={{ width: "18rem" }}>
-                <Card.Body>
-                  <Card.Title>MCA</Card.Title>
-                  <Card.Text>
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </Card.Text>
-                  <Button variant="primary">About more info.. </Button>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col lg="3" md="6">
-              <Card style={{ width: "18rem" }}>
-                <Card.Body>
-                  <Card.Title>MCA</Card.Title>
-                  <Card.Text>
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </Card.Text>
-                  <Button variant="primary">About more info.. </Button>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col lg="3" md="6">
-              <Card style={{ width: "18rem" }}>
-                <Card.Body>
-                  <Card.Title>MCA</Card.Title>
-                  <Card.Text>
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </Card.Text>
-                  <Button variant="primary">About more info.. </Button>
-                </Card.Body>
-              </Card>
-            </Col>
+            </SwiperSlide>
+            </Col> 
+      </Swiper>
           </Row>
         </Container>
       </Container>
