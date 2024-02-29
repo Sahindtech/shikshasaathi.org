@@ -4,12 +4,13 @@ import React, { Fragment } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import TypedText from "./TypedText";
+// change background color-animation
+// import "./style.css";
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-
 // import required modules
 import { Pagination, Navigation } from "swiper/modules";
 import "../components/Contact/contact.css";
@@ -115,13 +116,10 @@ const Home = () => {
           <Swiper
         slidesPerView={3}
         spaceBetween={30}
-        pagination={{
-          clickable: true,
-        }}
         navigation={{
           autoplay:true,
         }}
-        modules={[Pagination,Navigation]}
+        modules={[Navigation]}
         className="mySwiper"
       >
             <Col lg="3" md="6">
@@ -182,7 +180,6 @@ const Home = () => {
             </Col>
             <Col lg="3" md="6">
             <SwiperSlide>
-              {" "}
               <Card style={{ width: "24rem"}} className={`gallery__item`}>
                 <Card.Body>
                   <Card.Title>Bachelor of Technology </Card.Title>
@@ -197,7 +194,6 @@ const Home = () => {
             </Col>
             <Col lg="3" md="6">
             <SwiperSlide>
-              {" "}
               <Card style={{ width: "24rem" }} className={`gallery__item`}>
                 <Card.Body>
                   <Card.Title>Master of Science </Card.Title>
@@ -212,7 +208,6 @@ const Home = () => {
             </Col>
             <Col lg="3" md="6">
             <SwiperSlide>
-              {" "}
               <Card style={{ width: "24rem"}} className={`gallery__item`}>
                 <Card.Body>
                   <Card.Title>Bachelor's of Science </Card.Title>
@@ -242,7 +237,6 @@ const Home = () => {
             </Col>
             <Col lg="3" md="6">
             <SwiperSlide>
-            {" "}
               <Card style={{ width: "24rem"  }} className={`gallery__item`}>
                 <Card.Body>
                   <Card.Title>PGDCA </Card.Title>
