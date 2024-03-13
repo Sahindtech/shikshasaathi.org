@@ -69,3 +69,13 @@ button:hover {
     width: 100%;
   }
 }
+.contact-info {
+  background-color: #31e6c2;
+  border-radius: 10%;
+  margin-top: 7rem;
+}
+.contact-info p {
+  color: white;
+  font-weight: bold;
+  margin-left: 10rem;
+}

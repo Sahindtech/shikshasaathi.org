@@ -10,6 +10,17 @@
   box-sizing: border-box;
 }
 
+.home-background {
+  background-image: url("../src/assests/images/mountains-7422920_1280.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* .hero-image {
+  background-image: url("../src/assests/images/board-5599231_1280.png");
+} */
+/* Rest of your styles */
+
 section,
 footer {
   padding-top: 70px;
